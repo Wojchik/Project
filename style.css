@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navContainer{
+    display: flex;
+    height: 2em;
+    width: 7svw;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#headPortfolio{
+    background-color: rgba(106, 129, 255, 0.986);
+    text-align: center;
+}
+
+.navLine{
+    
+    margin-left: .2em;
+    width: 1.5em;
+    height: .1em;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+#navLines{
+    width: 7svw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(28, 121, 175)
+}
+
+#navBar{
+    z-index: -1;
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    top: 3%;
+    background-color: rgb(28, 121, 175);
+    width: 7svw;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 12em;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    border-top: 1px solid black;
+}
+
+.navLink{
+    border-top: 1px solid black;
+    line-height: 5em;
+    text-align: center;
+}
+
+.navLink:first-child{
+    border-top: none;
+}
+
+heading{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    font-size: 2em;
+    color: white;
+    background-color: rgb(28, 121, 175);
+    justify-content: center;
+    margin-left: 7svw;
+}
+
