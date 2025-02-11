@@ -7,50 +7,81 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-<div class="navContainer" class="headAlign">
-    <div id="navLines">
-        <div class="navLine" id="navLine1"></div>
-        <div class="navLine" id="navLine2"></div>
-        <div class="navLine" id="navLine3"></div>
-    </div>
+<!-- Navbar -->
+<div id=navButn>
+    <div class="navLine"></div>
+    <div class="navLine"></div>
+    <div class="navLine"></div>
 </div>
+        <nav id="navBar">
+            <ul class="menu">
+                <a href="#aboutMe"><li class="navLink">About Me</li></a>
+                <a href="#projects"><li class="navLink">My Projects</li></a>
+                <a href="#contactDeets"><li class="navLink">Contact Details</li></a>
+            </ul>
+        </nav>
+    <!-- Navbar End-->
 
-<nav id="navBar">
-<ul class="menu">
-    <li class="navLink">About Me</li>
-    <li class="navLink">My Projects</li>
-    <li class="navLink">Contact Details</li>
-</ul>
-</nav>
-<!-- Navbar End-->
-
-<!-- Heading -->
-<heading class="headAlign">
-    Portfolio
-</heading>
+    <!-- Heading -->
+        <header class="headAlign">
+            Portfolio
+        </header>
 <!-- Heading End -->
 <div id='sectAlign'>
 <!-- about me -->
 <section id="aboutMe" class="sections">
-<img id="myPhoto" src="./WhatsApp Image 2025-01-20 at 20.12.32_0635757b.jpg" alt="picture of me smiling" width="200" height="200">
-<div class="about">
-<h2 id="aboutHead">About Me</h2>
-<p id="aboutDesc">Hi, my name is Wojciech, and I aspire to become a software developer. 
+
+    <img class id="myPhoto" src="./WhatsApp Image 2025-01-20 at 20.12.32_0635757b.jpg" alt="picture of me smiling" width="300" height="300">
+    <div class="about">
+    <h2 id="aboutHead">About Me</h2>
+    <p id="aboutDesc">Hi, my name is Wojciech, and I aspire to become a software developer. 
     I am currently self studying and hope to pursue formal education in the field of software development to deepen my knowledge and skills.
     I have lived in Ireland for most of my life and aim to contribute to the country's future as a developer. 
     My goal is to continue learning, work on personal projects, and eventually share my creations with the public.
-</p>
-</div>
+    </p>
+    </div>
 
 </section>
 <!-- about me End -->
 
 <!-- projects -->
 <section id="projects" class="sections">
-<a><img></a>
+    <div class="projectDesc">
+        <a href="https://wojchik.github.io/DiceRoll.github.io/">
+            <img class="projectPic" id="diceRollPic" src="./Dice Roll.JPG" alt="picture of roll dice project">
+        </a>
+    <h2>Dice Roll</h2>
+    </div>
+
+    <div class="projectDesc">
+        <a href="https://wojchik.github.io/countingProgram.github.io/">
+            <img class="projectPic" id="countProgPic" src="./Counting Program.JPG" alt="picture of counting project">
+        </a>
+    <h2>Counter Program</h2>
+    </div>
+    <div class="projectDesc">
+        <a href="https://wojchik.github.io/NumberGuess.github.io/">
+            <img class="projectPic" id="numGuessPic" src="./Number Guess Game.JPG" alt="picture of number guess project">
+        </a>
+    <h2>Number Guessing Game</h2>
+    </div>
 </section>
 <!-- projects End -->
+
+<!-- footer -->
+<footer id="contactDeets">
+<!-- for aligning contact details -->
+<div id="alignCont1">
+<h3 id="contHead">Contact Details</h3>
+<p class="contInfo">Mobile: (+353)870006881</p>
+<p class="contInfo">Email: wojteklipski7@gmail.com</p>
+</div>
+<!-- for aligning social media -->
+<div id="alignCont2">
+<a><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fgithub-logo_25231&psig=AOvVaw0gPn3IEYisdvipkMfnOJBp&ust=1738744116132000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjOndzMqYsDFQAAAAAdAAAAABAE"></a>
+</div>
+</footer>
+<!-- footer End -->
 </div>
     <script src="index.js"></script>
 </body>
