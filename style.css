@@ -224,6 +224,12 @@ footer{
     z-index: 20;
 }
 
+
+#navBtn:hover{
+    cursor: pointer;
+}
+
+
     @media (max-width: 601px) {
         header {
             width: 100%; 
