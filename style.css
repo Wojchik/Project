@@ -62,6 +62,7 @@ header{
 }
 
 #navBar{
+    display: none;
     z-index: 19;
     position: relative;
     position: fixed;
