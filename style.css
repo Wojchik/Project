@@ -238,7 +238,7 @@ footer{
         }
     
         #navBar {
-            display:block;
+            display:none;
             height: 18em;
             top: 4em;
             z-index: 19;
@@ -253,6 +253,7 @@ footer{
         }
         .about{
             width: 100%;
+            height: 25em;
             align-items: center;
             justify-content: center;
             margin: 0;
@@ -268,6 +269,7 @@ footer{
             position: relative;
             height: 10em;
             width: 10em;
+            top: 2em;
         }
     
         .about {
