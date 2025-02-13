@@ -13,6 +13,7 @@ html {
 /* alignment for header */
 .headAlign{
     padding: 10px 0 10px 0;
+    width: 100%;
 }
 
 #headPortfolio{
@@ -61,16 +62,17 @@ header{
 }
 
 #navBar{
-    z-index: 0;
-    position: absolute;
+    z-index: 19;
+    position: relative;
     position: fixed;
     width: 100%;
     top: 7em;
     background-color: rgb(28, 121, 175);
     width: 10em;
-    height: 100%;
+    height: 18em;
     border-right: 2.5px solid rgb(36, 80, 136);
 }
+
 
 .menu{
     display: flex;
@@ -123,10 +125,9 @@ header{
 /* sizes for all sections */
 .sections{
     margin: 0;
-    margin-left: 10em;
     padding: 0;
     height: 60em;
-    width: calc(100% - 10em);
+    width: 100%;
     z-index: -3;
     border-bottom: 5px solid black;
 }
@@ -201,11 +202,205 @@ footer{
     margin-left: 2em;
 }
 
-#alignCont2{
-    display: flex;
-    flex-direction: column;
-    justify-content:end;
-    margin-right: 2em;
-    margin-bottom: 2em;
+.navLine{
+    position: relative;
+    color: white;
+    background-color: white;
+    z-index: 12;
+    height: 0.2em;
+    width: 2.5em;
+    border: 2px solid black;
 }
 
+#navBtn{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3em;
+    width: 3em;
+    margin-top: 10px;
+    z-index: 20;
+}
+
+    @media (max-width: 601px) {
+        header {
+            width: 100%; 
+            font-size: 2em; 
+        }
+    
+        #navBar {
+            display:block;
+            height: 18em;
+            top: 4em;
+            z-index: 19;
+        }
+    
+        #aboutMe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 3em;
+            height: auto;
+        }
+        .about{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            right: 0;
+        }
+
+        #aboutDesc{
+            font-size: 1em;
+        }
+    
+        #myPhoto {
+            display: block;
+            position: relative;
+            height: 10em;
+            width: 10em;
+        }
+    
+        .about {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-size: 0.8em;
+            width: 100%;
+            margin-left: 0;
+        }
+    
+        #aboutDesc {
+            width: 100%;
+        }
+    
+        .sections {
+            width: 100%;
+        }
+
+        #sectAlign{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .projectPic{
+            width: 12em;
+            height: 12em;
+        }
+
+        .projectDesc{
+            font-size: .8em;
+        }
+
+        #projects{
+            flex-wrap: wrap;
+        }
+
+        footer{
+            font-size: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navLine{
+            position: relative;
+            color: white;
+            background-color: white;
+            z-index: 12;
+            height: 0.2em;
+            width: 2.5em;
+            border: 2px solid black;
+        }
+
+        #navBtn{
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 3em;
+            width: 3em;
+            margin-top: 10px;
+            z-index: 20;
+        }
+
+        #navBtn:hover{
+            cursor: pointer;
+        }
+    }
+
+
+    @media (min-width: 600px) and (max-width: 1000px) {
+
+footer{
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.projectPic{
+    width: 10em;
+    height: 10em;
+}
+
+#projects{
+    flex-wrap: wrap;
+}
+
+
+.projectDesc{
+    font-size: 1.3em;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+    height: 50em;
+}
+    
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.8em;
+    width: 75%;
+    height: 40em;
+    margin-left: 10em;
+    margin-top: 2em;
+}
+
+
+#myPhoto {
+    display: block;
+    height: 15em;
+    width: 15em;
+    top: 5em;
+}
+
+#aboutDesc{
+    font-size: 1.5em;
+    width: 100%;
+}
+    }
+
+    @media (min-width: 1000px) and (max-width: 1400px) {
+.about{
+    width: 45%;
+}
+    }
